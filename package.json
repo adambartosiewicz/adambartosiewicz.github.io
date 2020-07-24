@@ -1,0 +1,33 @@
+{
+    "name": "feedback",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": "",
+    "license": "",
+    "author": "",
+    "scripts": {
+        "build": "cross-env NODE_ENV=production webpack",
+        "dev": "webpack --watch",
+        "start": "npm run build && npm run dev",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass:watch": "sass --watch scss/index.scss web/css/main.css"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4"
+    },
+    "dependencies": {
+        "@dp-ui-kit-v3/scss": "npm:@dp-ui-kit/scss@3.0.0-beta.1",
+        "bootstrap": "^4.5.0",
+        "cross-env": "^7.0.2",
+        "css-loader": "^1.0.0",
+        "cssnano": "^4.1.10",
+        "file-loader": "^6.0.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "postcss-loader": "^3.0.0",
+        "postcss-preset-env": "^6.7.0",
+        "sass": "^1.26.10",
+        "sass-loader": "^9.0.2",
+        "webpack": "^4.16.3",
+        "webpack-cli": "^3.1.0"
+    }
+}
